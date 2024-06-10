@@ -4,7 +4,22 @@ A set of tools for generating and altering sigmas in ComfyUI.
 Nodes Description
 
 SigmaWaveFormNode
-The SigmaWaveFormNode generates a variety of waveforms with adjustable parameters such as amplitude, frequency, damping factor, and waveform type. It supports multiple waveform types, including sine, sawtooth, stepped, square, random, triangle, and rectangular waves. The node also allows for optional Fourier transformation and uni-directional output.
+The SigmaWaveFormNode generates a variety of waveforms with adjustable parameters such as 
+amplitude, 
+frequency, 
+damping factor, 
+and waveform type. 
+
+It supports multiple waveform types, 
+including sine, 
+sawtooth, 
+stepped, 
+square, 
+random, 
+triangle, 
+and rectangular waves. 
+
+The node also allows for optional Fourier transformation and uni-directional output.
 
 Parameters:
 
@@ -21,7 +36,8 @@ enable_unidirectional: Boolean to toggle uni-directional transformation.
 
 
 SigmaWaveFormNodeAdvanced
-The SigmaWaveFormNodeAdvanced extends the functionality of the standard waveform generator by supporting the blending of two different waveforms. It provides additional parameters for the second waveform and a blend factor to control the mixture of the two waveforms.
+The SigmaWaveFormNodeAdvanced extends the functionality of the standard waveform generator by supporting the blending of two different waveforms. 
+It provides additional parameters for the second waveform and a blend factor to control the mixture of the two waveforms.
 
 Parameters:
 
@@ -42,25 +58,30 @@ enable_unidirectional: Boolean to toggle uni-directional transformation.
 
 
 FourierFilterNode
-The FourierFilterNode processes an input sigma sequence using a Fourier transform, applies a frequency filter, and optionally performs an inverse Fourier transform. It supports various filter types, including lowpass, highpass, bandpass, and bandstop.
+The FourierFilterNode processes an input sigma sequence using a Fourier transform, applies a frequency filter, 
+and optionally performs an inverse Fourier transform. 
+It supports various filter types, including lowpass, highpass, bandpass, and bandstop.
 
 Parameters:
 
 sigmas: Input sigma sequence.
-filter_type: Type of frequency filter to apply (lowpass, highpass, bandpass, bandstop).
+filter_type: Type of frequency filter to apply 
+(lowpass, highpass, bandpass, bandstop).
 cutoff_frequency: Cutoff frequency for the filter.
 apply_inverse_fourier: Boolean to toggle inverse Fourier transform.
 
 
 AttenuatorNode
-The AttenuatorNode adjusts the amplitude of a sigma sequence by applying an attenuation factor. This node is useful for fine-tuning the output of waveform generators or after applying a Fourier filter.
+The AttenuatorNode adjusts the amplitude of a sigma sequence by applying an attenuation factor. 
+This node is useful for fine-tuning the output of waveform generators or after applying a Fourier filter.
 
 Parameters:
 sigmas: Input sigma sequence.
 attenuation_factor: Factor by which to attenuate the sigma sequence.
 
 PhaseLockedLoopNode
-The PhaseLockedLoopNode locks the phase of an input sigma sequence to a reference sigma sequence. This node is useful for synchronization tasks where the phase of an output signal needs to match a reference signal.
+The PhaseLockedLoopNode locks the phase of an input sigma sequence to a reference sigma sequence. 
+This node is useful for synchronization tasks where the phase of an output signal needs to match a reference signal.
 
 Parameters:
 
