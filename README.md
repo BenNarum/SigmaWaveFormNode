@@ -1,6 +1,8 @@
 # SigmaWaveFormNodes
 A set of tools for generating and altering sigmas in ComfyUI.
 
+
+![Example](https://github.com/[BenNarum]/[SigmaWaveFormNodes]/blob/[main]/Screenshot_2024-06-10_024654.png?raw=true)
 Nodes Description
 
 SigmaWaveFormNode
