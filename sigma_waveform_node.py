@@ -77,7 +77,7 @@ class SigmaWaveFormNodeSimple:
         self.waveform_type = waveform_type
         self.enable_unidirectional = enable_unidirectional
 
-        t = np.linspace(0, steps, steps)
+        t = np.linspace(0, 1, steps)
         if waveform_type == "sine":
             sigma = self.generate_sine_wave(t)
         elif waveform_type == "sawtooth":
