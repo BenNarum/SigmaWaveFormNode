@@ -1,0 +1,15 @@
+[project]
+name = "sigmawaveformnode"
+description = "A set of tools for generating and altering sigmas in ComfyUI."
+version = "1.0.0"
+license = "LICENSE"
+dependencies = ["numpy", "torch"]
+
+[project.urls]
+Repository = "https://github.com/BenNarum/SigmaWaveFormNode"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "SigmaWaveFormNode"
+Icon = ""
